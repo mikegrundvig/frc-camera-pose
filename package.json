@@ -1,0 +1,10 @@
+{
+  "name": "frc-camera-pose",
+  "private": true,
+  "description": "Check where your FRC robot's AprilTag cameras go, in the browser.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

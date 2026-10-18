@@ -1,0 +1,41 @@
+{
+  "source": "The camera placement study (CameraStudy, simulated images and the robot's own vision pipeline), seed 1, 2026 FRC Rebuilt Welded, 0.5 m grid at 8 headings, 2 images per camera at each pose. With other robots: --other-robots=3-5, each 0.762 m tall with the robot's 0.9017 m square bumper outline. The 5-camera and sides layouts come from the study's eight places 16 in up, tilted 20 degrees (--mounts=eight.csv --cameras=6).",
+  "imagesPerPose": 2,
+  "otherRobotsLeast": 3,
+  "otherRobotsMost": 5,
+  "otherRobotsHeightMeters": 0.762,
+  "layouts": [
+    {
+      "name": "4 cameras at the corners, splayed 45 degrees, 21 in up, tilted 10 degrees (the default)",
+      "cameras": [
+        { "forwardInches": 11.75, "leftInches": 11.75, "upInches": 21, "yawDegrees": 45, "tiltUpDegrees": 10 },
+        { "forwardInches": 11.75, "leftInches": -11.75, "upInches": 21, "yawDegrees": -45, "tiltUpDegrees": 10 },
+        { "forwardInches": -11.75, "leftInches": 11.75, "upInches": 21, "yawDegrees": 135, "tiltUpDegrees": 10 },
+        { "forwardInches": -11.75, "leftInches": -11.75, "upInches": 21, "yawDegrees": -135, "tiltUpDegrees": 10 }
+      ],
+      "clear": { "p95Meters": 0.0266, "oneTag": 1.0, "twoTags": 0.9906, "twoCameras": 0.9533, "measured": 0.9979, "oneLostP95Meters": 0.0397, "oneLostMeasured": 0.9724 },
+      "otherRobots": { "p95Meters": 0.0302, "oneTag": 0.9938, "twoTags": 0.9466, "twoCameras": 0.9023, "measured": 0.9858, "oneLostP95Meters": null, "oneLostMeasured": 0.9475 }
+    },
+    {
+      "name": "4 cameras: ahead, back, left, right, 16 in up, tilted 20 degrees",
+      "cameras": [
+        { "forwardInches": 12.25, "leftInches": 0, "upInches": 16, "yawDegrees": 0, "tiltUpDegrees": 20 },
+        { "forwardInches": -12.25, "leftInches": 0, "upInches": 16, "yawDegrees": 180, "tiltUpDegrees": 20 },
+        { "forwardInches": 0, "leftInches": 12.25, "upInches": 16, "yawDegrees": 90, "tiltUpDegrees": 20 },
+        { "forwardInches": 0, "leftInches": -12.25, "upInches": 16, "yawDegrees": -90, "tiltUpDegrees": 20 }
+      ],
+      "otherRobots": { "p95Meters": 0.0281, "oneTag": 0.9931, "twoTags": 0.949, "twoCameras": 0.9094, "measured": 0.9854, "oneLostP95Meters": null, "oneLostMeasured": 0.9497 }
+    },
+    {
+      "name": "5 cameras: front corners splayed 30 degrees, back, left, right, 16 in up, tilted 20 degrees",
+      "cameras": [
+        { "forwardInches": 12.25, "leftInches": 12.25, "upInches": 16, "yawDegrees": 30, "tiltUpDegrees": 20 },
+        { "forwardInches": 12.25, "leftInches": -12.25, "upInches": 16, "yawDegrees": -30, "tiltUpDegrees": 20 },
+        { "forwardInches": -12.25, "leftInches": 0, "upInches": 16, "yawDegrees": 180, "tiltUpDegrees": 20 },
+        { "forwardInches": 0, "leftInches": 12.25, "upInches": 16, "yawDegrees": 90, "tiltUpDegrees": 20 },
+        { "forwardInches": 0, "leftInches": -12.25, "upInches": 16, "yawDegrees": -90, "tiltUpDegrees": 20 }
+      ],
+      "otherRobots": { "p95Meters": 0.0231, "oneTag": 0.9984, "twoTags": 0.9781, "twoCameras": 0.9681, "measured": 0.9948, "oneLostP95Meters": 0.0345, "oneLostMeasured": 0.9733 }
+    }
+  ]
+}

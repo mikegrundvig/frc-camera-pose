@@ -1,12 +1,12 @@
-three.js 0.181.1 (https://threejs.org), in `vendor/three/`, loaded only when the 3D view is first
-chosen: `build/three.module.min.js`, `build/three.core.min.js` and `examples/jsm/controls/OrbitControls.js`
-of the npm package `three@0.181.1` (from the `org.webjars.npm:three:0.181.1` WebJar on Maven Central).
-Unchanged, but for one line of `OrbitControls.js`: it imports `./three.module.min.js` instead of
-`three`, which a browser could only resolve through an inline import map.
+three.js 0.187.0 (https://threejs.org), in `vendor/three/`, loaded only when the 3D view is first
+chosen: `build/three.module.js`, `build/three.core.js` and `examples/jsm/controls/OrbitControls.js`
+of the npm package `three@0.187.0`. Unchanged, but for one line of `OrbitControls.js`: it imports
+`./three.module.js` instead of `three`, which a browser could only resolve through an inline import
+map.
 
 The MIT License
 
-Copyright © 2010-2025 three.js authors
+Copyright © 2010-2026 three.js authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

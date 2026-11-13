@@ -211,11 +211,11 @@ cameras the search's best is as good as the family's best, within a millimeter.
 
 ## The 3D view's library
 
-The 3D view uses [three.js](https://threejs.org) 0.181.1 (MIT), in `vendor/three/`: `three.module.min.js`
-and `three.core.min.js` from the `build/` folder of the npm package `three@0.181.1`, and
-`OrbitControls.js` from its `examples/jsm/controls/`, as served in the `org.webjars.npm:three:0.181.1`
-WebJar on Maven Central. They are unchanged but for one line of `OrbitControls.js`, which imports
-`./three.module.min.js` instead of `three` so no import map is needed. The page loads them only when
+The 3D view uses [three.js](https://threejs.org) 0.187.0 (MIT), in `vendor/three/`: `three.module.js`
+and `three.core.js` from the `build/` folder of the npm package `three@0.187.0` (which publishes no
+minified builds since 0.186), and `OrbitControls.js` from its `examples/jsm/controls/`. They are
+unchanged but for one line of `OrbitControls.js`, which imports `./three.module.js` instead of
+`three` so no import map is needed. The page loads them only when
 3D is first chosen. The license is in `licenses/three.js-License.md`.
 
 ## Where the field data comes from

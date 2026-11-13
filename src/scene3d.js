@@ -29,7 +29,7 @@ function themeColor(name) {
 // returns true the press is a drag of a robot, and the controls stay out of it until the pointer
 // is let go.
 export async function createView3d(canvas, { onPress } = {}) {
-  const THREE = await import('../vendor/three/three.module.min.js');
+  const THREE = await import('../vendor/three/three.module.js');
   const { OrbitControls } = await import('../vendor/three/OrbitControls.js');
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
